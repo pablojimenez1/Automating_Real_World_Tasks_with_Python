@@ -2,6 +2,7 @@
 import emails
 import os
 import reports
+
 table_data=[
   ['Name', 'Amount', 'Value'],
   ['elderberries', 10, 0.45],
@@ -12,6 +13,7 @@ table_data=[
   ['cherries', 23, 5.80],
   ['grapes', 13, 2.48],
   ['kiwi', 4, 0.49]]
+
 reports.generate("/tmp/report.pdf", "A Complete Inventory of My Fruit", "This is all my fruit.", table_data)
 sender = "automation@example.com"
 receiver = "{}@example.com".format(os.environ.get('USER'))
