@@ -13,7 +13,7 @@ for file in os.listdir("./supplier-data/descriptions"):
             line = ln.strip()
             if "lbs" in line:
                 nline = line.split()
-                wght int(nline[0])
+                wght = int(nline[0])
                 fruits["weight"] = wght
                 index += 1
             else:
